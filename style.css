@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-text-color: #183b56;
+  --secondary-text-color: #577592;
+  --accent-color: #2294ed;
+  --accent-color: #1d69e3;
+  --padding-inline-section: 20px;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--primary-text-color);
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  color: var(--secondary-text-color);
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+.hoverLink {
+  color: var(--primary-text-color);
+}
+.hoverLink:hover{
+    color:var(--accent-color);
+    cursor: pointer;
+    transition: 0.2s ease-out;
+}
+.small-bold-text {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  padding-inline: var(--padding-inline-section);
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.topBanner {
+  background-image: url("assets/assets/asset 18.png");
+  background-color: #4fb3d4;
+  background-size: 280px;
+}
+
+.bannerText {
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+}
+.mainNav {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+.companyLogo img {
+  width: 200px;
+}
+.navLinks {
+  flex-basis: 730px;
+}
+.navLinks ul {
+  justify-content: end;
+  gap: 40px;
+}
