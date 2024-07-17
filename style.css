@@ -46,7 +46,6 @@ ul {
   font-size: 1rem;
   font-weight: 700;
 }
-
 .container {
   max-width: 1180px;
   margin-inline: auto;
@@ -170,6 +169,9 @@ header {
   max-width: 30%;
   text-align: center;
 }
+.featureCard img {
+  width: 70px;
+}
 
 /* big feature */
 .bigFeatureSection {
@@ -184,4 +186,94 @@ header {
 .featureDesc {
   flex-direction: column;
   align-items: flex-start;
+}
+
+/* example section */
+.exampleHeader {
+  /* text-align: center; */
+  flex-direction: column;
+  gap: 20px;
+}
+/* .exHeadingText{
+  margin-bottom: 20px;
+} */
+.exampleCard {
+  width: 23%;
+  /* margin-top: 30px; */
+  position: relative;
+  min-height: 300px;
+  background: black;
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)),
+    url(./assets/assets/asset35.png);
+  transition: 0.2s ease-out;
+}
+.exampleCard:hover {
+  box-shadow: 0 0 10px #888;
+}
+.exampleCard:nth-child(2) {
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)),
+    url(./assets/assets/asset36.png);
+}
+.exampleCard:nth-child(3) {
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)),
+    url(./assets/assets/asset37.png);
+}
+.exampleCard:nth-child(4) {
+  background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)),
+    url(./assets/assets/asset38.png);
+}
+.exampleArea {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.cardText {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  color: white;
+}
+
+/* cta section */
+.ctaSectionContainer {
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  gap: 35px;
+}
+.ctaSection p {
+  color: white;
+  margin-top: 20px;
+}
+.ctaSection {
+  background-color: #183b56;
+  margin-top: 30px;
+  /* padding: 105px; */
+  padding: 120px var(--padding-inline-section) 80px;
+}
+
+/* footer */
+footer {
+  padding-block: 80px;
+  background-color: #ebf2fa;
+}
+.linkColumn {
+  flex-direction: column;
+  align-items: flex-start;
+  /* margin: 80px var(--padding-inline-section) 80px; */
+  gap: 20px;
+}
+.footerContainer {
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+/* sub footer */
+.subFooter {
+  background-color: #b9cde4;
+  padding: var(--padding-inline-section);
+}
+.subFooterContainer {
+  justify-content: center;
+  gap: 0px;
 }
