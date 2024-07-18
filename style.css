@@ -264,7 +264,7 @@ footer {
   gap: 20px;
 }
 .footerContainer {
-  align-content: flex-start;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
