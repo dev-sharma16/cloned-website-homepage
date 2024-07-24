@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Usability Hub</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css">
   </head>
   <body>
     <div class="topBanner">
@@ -20,7 +21,7 @@
         <a href="#" class="companyLogo">
           <img src="assets/assets/asset 0.png" alt="comapny Logo" />
         </a>
-        <div class="navLinks">
+        <div class="navLinks" id="navLinks">
           <ul class="flex">
             <li><a href="#" class="hoverLink">Products</a></li>
             <li><a href="#" class="hoverLink">Customers</a></li>
@@ -30,6 +31,9 @@
             <li><a href="#" class="hoverLink primaryButton">Sign Up</a></li>
           </ul>
         </div>
+        <a href="" class="navToggle hoverLink" id="navToggle">
+          <i class="fa-solid fa-bars"></i>
+        </a>
       </div>
     </nav>
 
@@ -146,7 +150,10 @@
       </div>
     </section>
     <section class="bigFeatureSection">
-      <div class="container flex bigFeatureContainer">
+      <div class="container flex bigFeatureContainer" id="secondBigFeature">
+        <div class="fearureImg">
+          <img src="assets/assets/asset 16.png" alt="" />
+        </div>
         <div class="featureDesc flex">
           <h4>Optimisation for</h4>
           <h3>Marketers</h3>
@@ -155,9 +162,6 @@
             optimise conversion rates on marketing campaigns and product
             launches.
           </p>
-        </div>
-        <div class="fearureImg">
-          <img src="assets/assets/asset 16.png" alt="" />
         </div>
       </div>
     </section>
@@ -265,5 +269,13 @@
       src="https://kit.fontawesome.com/36075ab942.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const toggleButton = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      toggleButton.addEventListener('click',()=>{
+        navLinks.classList.toggle('active')
+      })
+    </script>
   </body>
 </html>
