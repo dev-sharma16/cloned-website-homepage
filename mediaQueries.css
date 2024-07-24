@@ -1,0 +1,85 @@
+@media screen and (max-width: 991px) {
+  h3 {
+    font-size: 1.2rem;
+  }
+  .navToggle {
+    display: block;
+    margin-right: 20px;
+  }
+  .mainNav{
+    overflow: initial;
+  }
+  .navLinks {
+    position: absolute;
+    background-color: white;
+    left: -100%;
+    top: 100%;
+    width: 100%;
+    padding-block:20px;
+    transition: 0.2s ease-in-out;
+  }
+  .navLinks.active{
+   left: 0; 
+  }
+  .navLinks ul {
+    flex-direction: column;
+  }
+  .logos {
+    justify-content: space-evenly;
+  }
+  .exampleArea {
+    gap: 20px;
+  }
+  .exampleCard {
+    width: calc(50% - 10px);
+    height: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .primaryButton {
+    width: 100%;
+  }
+  .headerSection {
+    flex-direction: column-reverse;
+  }
+  .headerLeft {
+    max-width: 100vw;
+    text-align: center;
+  }
+  .featureCard {
+    min-width: calc(50% - 10px);
+  }
+  .bigFeatureContainer,
+  #secondBigFeature {
+    flex-direction: column;
+  }
+  .footerContainer {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+  }
+  .linkColumn {
+    align-items: stretch;
+  }
+}
+@media screen and (max-width: 479px) {
+  :root {
+    --padding-inline-section: 10px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .featureCard {
+    min-width: 100%;
+  }
+  .exampleCard {
+    width: 100%;
+  }
+}
