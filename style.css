@@ -22,6 +22,9 @@ h1 {
 h2 {
   font-size: 2rem;
 }
+h3 {
+  font-size: 1.5rem;
+}
 p {
   font-family: "Roboto", sans-serif;
   font-size: 1.25rem;
@@ -50,6 +53,7 @@ ul {
   max-width: 1180px;
   margin-inline: auto;
   padding-inline: var(--padding-inline-section);
+  overflow: hidden;
 }
 .flex {
   display: flex;
@@ -72,6 +76,7 @@ ul {
 .mainNav {
   margin-top: 20px;
   justify-content: space-between;
+  position: relative;
 }
 .companyLogo img {
   width: 200px;
@@ -83,6 +88,9 @@ ul {
   justify-content: end;
   gap: 40px;
 }
+.navToggle {
+  display: none;
+}
 .primaryButton {
   background-color: var(--accent-color);
   border-radius: 6px;
@@ -91,6 +99,7 @@ ul {
   padding: 12px 24px;
   box-shadow: 0 0 2px var(--secondary-text-color);
   transition: 0.2s ease-out;
+  text-align: center;
 }
 .primaryButton:hover {
   background-color: var(--accent-color-dark);
@@ -127,7 +136,7 @@ header {
   margin-top: 20px;
 }
 .headerRight img {
-  width: 600px;
+  width: 100%;
 }
 
 /* companies */
@@ -139,6 +148,7 @@ header {
 .logos {
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 20px;
 }
 .logo {
   height: 46px;
@@ -153,6 +163,7 @@ header {
 }
 .featuresHeader {
   text-align: center;
+  margin-bottom: 40px;
 }
 .featuresHeader h2 {
   margin-bottom: 20px;
@@ -160,7 +171,7 @@ header {
 .featuresArea {
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px;
+  gap: 20px;
   margin-top: 40px;
 }
 .featureCard {
@@ -180,6 +191,9 @@ header {
 .bigFeatureContainer {
   gap: 30px;
 }
+#secondBigFeature {
+  flex-direction: row-reverse;
+}
 .fearureImg img {
   width: 100%;
 }
@@ -189,10 +203,13 @@ header {
 }
 
 /* example section */
+.examplesSection {
+  padding: 80px var(--padding-inline-section);
+}
 .exampleHeader {
-  /* text-align: center; */
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 /* .exHeadingText{
   margin-bottom: 20px;
@@ -201,7 +218,7 @@ header {
   width: 23%;
   /* margin-top: 30px; */
   position: relative;
-  min-height: 300px;
+  height: 300px;
   background: black;
   background: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.9)),
     url(./assets/assets/asset35.png);
@@ -225,6 +242,7 @@ header {
 .exampleArea {
   justify-content: space-between;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 .cardText {
   position: absolute;
@@ -240,18 +258,21 @@ header {
   color: white;
   width: 100%;
   gap: 35px;
-}
-.ctaSection p {
-  color: white;
-  margin-top: 20px;
+  /* padding-right: 20px; */
 }
 .ctaSection {
   background-color: #183b56;
   margin-top: 30px;
   /* padding: 105px; */
-  padding: 120px var(--padding-inline-section) 80px;
+  padding: 120px var(--padding-inline-section) 180px;
+  width: 100%;
+  /* padding-right: 20px; */
 }
-
+.ctaSection p {
+  color: white;
+  margin-top: 20px;
+  text-align: center;
+}
 /* footer */
 footer {
   padding-block: 80px;
@@ -276,4 +297,5 @@ footer {
 .subFooterContainer {
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
